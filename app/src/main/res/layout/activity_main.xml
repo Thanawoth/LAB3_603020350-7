@@ -5,9 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context=".MainActivity">
 
+  <ImageView
+      android:id="@+id/imageBg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/bgneww"
+      android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +29,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="I am a new developer."
-        android:background="#F44336"
+        android:background="#36F4B2"
         android:textSize="20sp"
     android:layout_below="@id/imageView"
     android:layout_centerHorizontal="true"/>
@@ -29,7 +38,8 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/android_kotlin" />
+        android:src="@drawable/android_kotlin"
+        android:layout_centerInParent="true"/>
 
+    </RelativeLayout>
 </RelativeLayout>
